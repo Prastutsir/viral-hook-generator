@@ -1,29 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <meta name="google-site-verification" content="9pCYfWoAhP61u5txfAZ6OA4ws8Z_TRkJuDvpWcgGafU" />
+
 <title>Free Viral Hook Generator – YouTube Title, TikTok Caption & Hashtag Generator</title>
 
 <meta name="description" content="Free Viral Hook Generator for YouTube, TikTok & Instagram. Generate viral titles, captions, hashtags and hooks instantly for creators.">
+
 <meta name="keywords" content="viral hook generator, youtube title generator, tiktok caption generator, instagram hashtag generator, youtube hooks, viral content ideas">
+
 <meta name="author" content="Viral Content Generator">
 
-<link rel="canonical" href="https://yourdomain.com/viral-hook-generator">
+<link rel="canonical" href="https://viral-hook-generator-amber.vercel.app/">
 
 <link rel="icon" href="/favicon.ico">
 
 <meta property="og:title" content="Free Viral Hook Generator Tool">
 <meta property="og:description" content="Generate viral hooks, titles, captions and hashtags instantly. Perfect for YouTube, TikTok and Instagram creators.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://yourdomain.com/thumbnail.png">
+<meta property="og:url" content="https://viral-hook-generator-amber.vercel.app">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Free Viral Hook Generator Tool">
 <meta name="twitter:description" content="Generate viral hooks, titles, captions and hashtags instantly.">
-<meta name="twitter:image" content="https://yourdomain.com/thumbnail.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -32,367 +33,11 @@
 "@context":"https://schema.org",
 "@type":"WebApplication",
 "name":"Viral Hook Generator",
-"url":"https://yourdomain.com/viral-hook-generator",
+"url":"https://viral-hook-generator-amber.vercel.app",
 "description":"Free viral hook generator for YouTube, TikTok and Instagram creators.",
 "applicationCategory":"ContentGenerator",
 "operatingSystem":"All"
 }
 </script>
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Inter;
-}
-
-body{
-background:radial-gradient(circle at top,#1e1b4b,#020617);
-color:white;
-min-height:100vh;
-padding:40px;
-}
-
-.container{
-max-width:1100px;
-margin:auto;
-}
-
-.header{
-text-align:center;
-margin-bottom:40px;
-}
-
-.header h1{
-font-size:50px;
-background:linear-gradient(90deg,#38bdf8,#6366f1,#ec4899);
-background-clip:text;
--webkit-background-clip:text;
-color:transparent;
-}
-
-.header p{
-color:#94a3b8;
-margin-top:10px;
-}
-
-.card{
-background:rgba(255,255,255,0.05);
-border:1px solid rgba(255,255,255,0.1);
-border-radius:18px;
-padding:30px;
-backdrop-filter:blur(12px);
-}
-
-.input-area{
-display:flex;
-gap:10px;
-margin-bottom:20px;
-}
-
-input{
-flex:1;
-padding:16px;
-border-radius:12px;
-border:none;
-outline:none;
-background:#020617;
-color:white;
-border:1px solid rgba(255,255,255,0.1);
-}
-
-button{
-padding:16px 26px;
-border:none;
-border-radius:12px;
-cursor:pointer;
-font-weight:600;
-background:linear-gradient(135deg,#6366f1,#ec4899);
-color:white;
-transition:0.2s;
-}
-
-button:hover{
-transform:translateY(-2px);
-}
-
-.tabs{
-display:flex;
-gap:10px;
-margin-bottom:20px;
-flex-wrap:wrap;
-}
-
-.tab{
-padding:10px 16px;
-background:#020617;
-border-radius:10px;
-cursor:pointer;
-border:1px solid rgba(255,255,255,0.1);
-}
-
-.tab.active{
-background:#6366f1;
-}
-
-.results{
-margin-top:20px;
-}
-
-.item{
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:#020617;
-padding:14px;
-border-radius:10px;
-margin-bottom:8px;
-border:1px solid rgba(255,255,255,0.05);
-}
-
-.copy{
-background:#22c55e;
-border:none;
-padding:6px 10px;
-border-radius:6px;
-font-size:12px;
-cursor:pointer;
-}
-
-.score{
-margin-left:10px;
-font-size:12px;
-color:#facc15;
-}
-
-.copyAll{
-margin-top:15px;
-background:#0ea5e9;
-}
-
-.footer{
-text-align:center;
-margin-top:30px;
-color:#64748b;
-font-size:13px;
-}
-
-.seo{
-margin-top:40px;
-color:#94a3b8;
-line-height:1.6;
-font-size:14px;
-}
-
-</style>
-
 </head>
-
-<body>
-
-<div class="container">
-
-<div class="header">
-<h1>Viral Content Generator</h1>
-<p>Create Hooks, Titles, Captions & Hashtags for YouTube, TikTok & Instagram</p>
-</div>
-
-<div class="card">
-
-<div class="input-area">
-<input id="topic" placeholder="Enter topic (example: discipline)">
-<button onclick="generate()">Generate</button>
-</div>
-
-<div class="tabs">
-<div class="tab active" onclick="setTab('hooks',this)">Hooks</div>
-<div class="tab" onclick="setTab('titles',this)">YouTube Titles</div>
-<div class="tab" onclick="setTab('captions',this)">TikTok Captions</div>
-<div class="tab" onclick="setTab('hashtags',this)">Hashtags</div>
-</div>
-
-<div class="results" id="results"></div>
-
-<button class="copyAll" onclick="copyAll()">Copy All</button>
-
-</div>
-
-<div class="seo">
-
-<h2>Free Viral Hook Generator Tool</h2>
-
-<p>This free viral hook generator helps creators generate engaging hooks, YouTube titles, TikTok captions and Instagram hashtags instantly.</p>
-
-<p>Simply enter your topic and the tool will generate viral content ideas to increase views and engagement on social media platforms.</p>
-
-</div>
-
-<div class="footer">
-Built for creators • Unlimited usage
-</div>
-
-</div>
-
-<script>
-
-let currentTab="hooks"
-let generated=[]
-
-function setTab(tab,el){
-
-currentTab=tab
-
-document.querySelectorAll(".tab").forEach(t=>t.classList.remove("active"))
-el.classList.add("active")
-
-generate()
-
-}
-
-function randomScore(){
-
-return Math.floor(Math.random()*40)+60
-
-}
-
-function generate(){
-
-let topic=document.getElementById("topic").value
-
-if(topic===""){
-alert("Enter topic")
-return
-}
-
-let list=[]
-
-if(currentTab==="hooks"){
-
-list=[
-
-`Nobody talks about this ${topic} secret`,
-`99% fail because of this ${topic} mistake`,
-`The dark truth about ${topic}`,
-`Before you try ${topic} watch this`,
-`Stop doing this if you want better ${topic}`,
-`This ${topic} trick changed everything`,
-`The biggest myth about ${topic}`,
-`Why your ${topic} isn't working`,
-`If you struggle with ${topic}, watch this`,
-`The hidden rule of ${topic}`,
-`3 brutal truths about ${topic}`,
-`Most people misunderstand ${topic}`,
-`The lazy way to improve ${topic}`,
-`The ${topic} habit that made me rich`,
-`What nobody tells you about ${topic}`,
-`This ${topic} method is going viral`,
-`Why smart people struggle with ${topic}`,
-`The secret formula for ${topic}`,
-`You’re wasting time with ${topic}`,
-`This ${topic} strategy works fast`
-
-]
-
-}
-
-if(currentTab==="titles"){
-
-list=[
-
-`How To Master ${topic} In 7 Days`,
-`The Ultimate ${topic} Guide`,
-`I Tried ${topic} For 30 Days`,
-`10 ${topic} Tips That Actually Work`,
-`The Truth About ${topic}`,
-`Why ${topic} Is So Hard`,
-`How Beginners Can Learn ${topic}`,
-`5 Mistakes Ruining Your ${topic}`,
-`The Fastest Way To Improve ${topic}`,
-`${topic} Explained In 5 Minutes`
-
-]
-
-}
-
-if(currentTab==="captions"){
-
-list=[
-
-`${topic} changed my life`,
-`Nobody told me this about ${topic}`,
-`This ${topic} trick is crazy`,
-`POV: you finally understand ${topic}`,
-`The truth about ${topic}`,
-`${topic} beginners must watch`,
-`Why ${topic} is underrated`,
-`This is your sign to start ${topic}`,
-`${topic} secrets revealed`,
-`Save this if you love ${topic}`
-
-]
-
-}
-
-if(currentTab==="hashtags"){
-
-list=[
-
-`#${topic}`,
-`#${topic}tips`,
-`#${topic}motivation`,
-`#learn${topic}`,
-`#${topic}life`,
-`#${topic}success`,
-`#${topic}mindset`,
-`#${topic}daily`,
-`#${topic}creator`,
-`#viral${topic}`
-
-]
-
-}
-
-generated=list
-
-let results=document.getElementById("results")
-results.innerHTML=""
-
-list.forEach(item=>{
-
-let score=randomScore()
-
-let div=document.createElement("div")
-div.className="item"
-
-div.innerHTML=`
-<span>${item} <span class="score">🔥 ${score}%</span></span>
-<button class="copy" onclick="copyText('${item}')">Copy</button>
-`
-
-results.appendChild(div)
-
-})
-
-}
-
-function copyText(text){
-
-navigator.clipboard.writeText(text)
-alert("Copied!")
-
-}
-
-function copyAll(){
-
-navigator.clipboard.writeText(generated.join("\n"))
-alert("All copied!")
-
-}
-
-</script>
-
-</body>
-
-</html>
